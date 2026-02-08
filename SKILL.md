@@ -10,8 +10,8 @@ metadata:
         - python3
         - pip
     install:
-      - pip install -r requirements.txt
-      - pip install git+https://github.com/soxoj/async-search-scraper.git --no-deps
+      - python3 -m pip install -r requirements.txt
+      - python3 -m pip install git+https://github.com/soxoj/async-search-scraper.git --no-deps
 ---
 
 # Web Multi-Search
@@ -22,11 +22,20 @@ Search the web across **multiple search engines at once** using [async-search-sc
 
 ```bash
 cd skills/web-multi-search
-pip install -r requirements.txt
-pip install git+https://github.com/soxoj/async-search-scraper.git --no-deps
+python3 -m pip install -r requirements.txt
+python3 -m pip install git+https://github.com/soxoj/async-search-scraper.git --no-deps
 ```
 
 > **Note:** The library must be installed from the GitHub URL, not PyPI. The `--no-deps` flag is required because the library pins `bs4` (wrong package name); the real dependencies are already in `requirements.txt`.
+
+### Linux (apt) fallback
+If `pip` isn't available, install the system packages:
+
+```bash
+sudo apt-get update
+sudo apt-get install -y python3-requests python3-aiohttp python3-aiohttp-socks python3-bs4
+```
+
 
 ## Usage
 
