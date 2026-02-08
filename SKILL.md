@@ -16,7 +16,20 @@ metadata:
 
 # Web Multi-Search
 
-Search the web across **multiple search engines at once** using [async-search-scraper](https://github.com/soxoj/async-search-scraper). Collects results from Bing, Yahoo, Startpage, Aol, and Ask, iterating through multiple result pages.
+**Search niche search engines — without limits**
+
+An OpenClaw skill that searches the web across multiple search engines simultaneously using [async-search-scraper](https://github.com/soxoj/async-search-scraper): collects results from Bing, Yahoo, Startpage, Aol, and Ask, iterating through multiple result pages.
+
+## Supported engines
+
+| Engine | Status |
+|--------|--------|
+| Bing | Working |
+| Yahoo | Working |
+| Startpage | Working |
+| Aol | Working |
+| Ask | Working |
+| Torch | Requires TOR proxy |
 
 ## Setup
 
