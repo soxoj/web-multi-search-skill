@@ -1,5 +1,7 @@
 # web-multi-search
 
+**Search niche search engines — without limits**
+
 An OpenClaw skill that searches the web across multiple search engines simultaneously using [async-search-scraper](https://github.com/soxoj/async-search-scraper).
 
 ## Supported engines
